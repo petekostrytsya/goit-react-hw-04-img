@@ -7,7 +7,6 @@ export class Api {
   constructor() {
     this.searchQuery = '';
     this.page = 1;
-    this.totalHits = 0;
   }
 
   async fetchPost() {
@@ -36,14 +35,6 @@ export class Api {
 
   set query(newQuery) {
     this.searchQuery = newQuery;
-  }
-
-  get hits() {
-    return this.totalHits;
-  }
-
-  set hits(newTotalHits) {
-    this.totalHits = newTotalHits;
   }
 
   incrementPage() {
