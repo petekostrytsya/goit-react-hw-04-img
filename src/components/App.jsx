@@ -86,6 +86,7 @@ export const App = () => {
     setGalleryPage(prevGalleryPage => prevGalleryPage + 1);
   };
 
+  
     return (
       <AppContainer>
         <Searchbar onSubmit={handleFormSubmit} />
